@@ -12,5 +12,5 @@ Please note that this repository is only for personal use. Do not copy or share.
 3. Install the required python packages by ``pip install -r requirements``;
 4. Run ``python make_dataset/csv_to_json.py`` to convert the dataset to a json file;
 5. Revise ``default_prompt`` in "src/template.py" to provide an identity for the model;
-6. Run ``python src/train_sft.py`` to train the model;
+6. Run ``python src/train_sft.py`` to train the model (if you are in China mainland, you may want to download the model from ModelScope instead of HuggingFace; then you need to set ``model_name_or_path`` to ``ZhipuAI/chatglm3-6b`` in "settings.json" and modify the environment variable by ``export USE_MODELSCOPE_HUB=1``);
 7. Run ``python src/web_demo.py`` to launch the chatbot.
