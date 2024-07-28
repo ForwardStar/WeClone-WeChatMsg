@@ -129,7 +129,7 @@ def make_sft_dataset():
     # 相差超过1小时的时间戳分为不同的对话
     # temp_res为一个长度为2的队列
     sender = deque(maxlen=100)
-    receiver = deque(maxlen=2)
+    receiver = deque(maxlen=100)
     last_StrTime = csv_concat.iloc[0]['StrTime']
     # 6种情况
     # temp_res 为空  遇到 0入队 遇到1不处理 遇到cut不处理
