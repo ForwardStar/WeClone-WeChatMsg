@@ -11,5 +11,6 @@ Please note that this repository is only for personal use. Do not copy or share.
 2. Create a directory "data/csv/chat" and place the exported .csv file to the directory;
 3. Install the required python packages by ``pip install -r requirements``;
 4. Run ``python make_dataset/csv_to_json.py`` to convert the dataset to a json file;
-5. Run ``python src/train_sft.py`` to train the model;
-6. Run ``python src/web_demo.py`` to launch the chatbot.
+5. Revise ``default_prompt`` in "src/template.py" to provide an identity for the model;
+6. Run ``python src/train_sft.py`` to train the model;
+7. Run ``python src/web_demo.py`` to launch the chatbot.
